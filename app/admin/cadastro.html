@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/materialize.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card red darken-1">
+            <div class="card-content white-text">
+              <span class="card-title" align="center">Cadastro de empresas - ODS17</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div id="conteudo" style="margin:auto; width: 800px">
+
+        <form id="formulario">
+
+          <div class="autocomplete">
+            <label for="txtid_empresa"> </label>
+            <input type="hidden" id="txtid_empresa" name="txtid_empresa" value="NOVO ITEM" readonly>
+          </div>
+
+          <div class="input-field col s6">
+            <P>Nome da Empresa</P>
+            <label for="txtnome_empresa"></label>
+            <input type="text" id="txtnome_empresa" name="txtnome_empresa">
+          </div>
+          <div class="input-field col s6">
+            <p>CNPJ da Empresa</p>
+            <label for="txtcnpj_empresa"></label>
+            <input type="text" id="txtcnpj_empresa" name="txtcnpj_empresa">
+           </div>
+           <div class="input-field col s6">
+          <P>Cidade Empresa</P>
+            <label for="txtcidade_empresa"></label>
+            <input id="txtcidade_empresa" name="txtcidade_empresa"></input>
+          </div>
+          <div class="input-field col s6">
+            <p>Endereco Empresa</p>
+            <label for="txtendereco_emprego"></label>
+            <input id="txtendereco_emprego" name="txtendereco_emprego"></input>
+          </div>
+          <div class="input-field col s6">
+            <p>Estado Empresa</p>
+            <label for="txtestadoempresa"></label>
+            <input id="txtestado_empresa" name="txtestado_empresa"></input>
+          </div>
+
+          <button class="waves-effect waves-light red btn"" name="btncadastrar">Cadastrar</button>
+          <div class="input-field">
+            <span id="lblaviso"></span>
+          </div>  
+        </form>
+      </div>
+    </div>
+
+
+
+  <div class="container">
+      <div class="header">
+      </div>
+
+      
+
+        <div id="conteudo" style="margin:auto; width:;">
+          <h1>Lista de Empresas</h1>
+          <label for="txtfiltrar">Filtrar: </label><input type="text" placeholder="Filtrar" id="txtfiltrar">
+          <table class="striped">
+
+            <thead>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>CNPJ</th>
+              <th>Cidade empresa</th>
+              <th>Endereço</th>
+              <th>Estado</th>
+              <th>Opções</th>
+
+            </thead>
+              <tbody>
+
+
+
+              </tbody>
+          </table>
+
+<br>
+<br>
+
+          <a class="waves-effect waves-light btn red" href="cadastrologo.html">Cadastrar Logos</a>
+
+          
+        <br>
+        <br>
+        <a href="javascript:deslogar('deslogar');">Deslogar</a>
+        <br>
+        <br>
+        <a href="javascript:deslogar('deslogar_todos');">Deslogar de todos os dispositivos</a>
+
+        </body>
+          <script src="js/ajax.js"></script>
+          <script src="js/empresa.js"></script>
+          <script src="js/deslog.js"></script>
+</html>

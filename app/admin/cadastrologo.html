@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/materialize.min.css">
+</head>
+<body>
+
+<div class="container">
+
+
+    <div class="header">   
+      
+<div class="container">
+  <div class="header">
+    <div class="row">
+      <div class="col s12 m12">
+        <div class="card red darken-1">
+          <div class="card-content white-text">
+            <span class="card-title" align="center">Cadastro de logos - ODS17</span>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+      <div id="conteudo" style="margin:auto; width: 500px;" align="center">
+
+        <form id="formulario" enctype="multipart/form-data"> 
+        
+
+          <div class="autocomplete">
+            <label for="txtid_logo">Codigo da imagem: </label>
+            <input type="hidden" id="txtid_logo" name="txtid_logo" value="NOVO ITEM" readonly>
+          </div>
+
+
+          <div class="campo">
+            <label for="imagem">Logo: </label>
+            <input type="file" id="imagem" name="imagem" accept="image/png, image/jpeg"> 
+        </div>
+<!-- name="txtlogo" -> é o nome que vamos colocar no input file quando chamarmos a função para convertar a imagem -->
+<br>
+          <button class="btn waves-effect waves-light red" name="btncadastrar">Cadastrar logo</button>
+          <div class="campo">
+          </div>
+          <span id="lblaviso"></span>
+
+        </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="container">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="header">
+      </div>
+
+
+        <div id="conteudo" style="margin:auto; width: 1000px;">
+          <h1 class="black-text text-darken-2">Lista de Logos</h1>
+          <label for="txtfiltrar">Filtrar: </label><input type="text" placeholder="Filtrar" id="txtfiltrar">
+          <table>
+            <thead>
+              
+              <th>ID</th>
+              <th>IMAGEM</th>
+              <th>OPÇÕES</th>
+            </thead>
+              <tbody>
+
+
+
+              </tbody>
+          </table>
+<br>
+<br>
+<a class="waves-effect waves-light btn red" href="cadastro.html">Voltar para cadastro de empresas</a>
+
+
+        </body>
+          <script src="js/ajax.js"></script>
+          <script src="js/logo.js"></script>
+          <script src="js/deslog.js"></script>
+</html>
